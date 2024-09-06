@@ -11,13 +11,12 @@
     <LinearLayout
         android:id="@+id/forecast_container"
         android:layout_width="376dp"
-        android:layout_height="716dp"
+        android:layout_height="478dp"
         android:layout_gravity="center"
-        android:background="#3B03A9F4"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="5dp">
 
-        <!-- Monday forecast entry -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -529,6 +528,8 @@
                 android:textColor="@android:color/black"
                 android:textSize="16sp" />
         </LinearLayout>
+
+
 
 
     </LinearLayout>

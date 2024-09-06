@@ -1,8 +1,12 @@
 package vn.edu.usth.weather;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ScrollView;
+
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import vn.edu.usth.weather.ForecastFragment;
@@ -10,17 +14,13 @@ import vn.edu.usth.weather.ForecastFragment;
 
 public class WeatherActivity extends AppCompatActivity {
     private static final String TAG = "WeatherActivity";
+//    private ScrollView scrollView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
 
-        ForecastFragment firstFragment = new ForecastFragment();
-
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.add(R.id.container, firstFragment);
-        transaction.commit();
         Log.i(TAG, "onCreate: Activity created");
     }
 

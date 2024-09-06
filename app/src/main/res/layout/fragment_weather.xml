@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#D3FFB3"
+    android:padding="10dp"
+
+
+    android:id="@id/weather_container"
+    >
+
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="66dp"
+        android:layout_height="42dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="8dp"
+        android:text="12C"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/weather_condition"
+        android:layout_width="66dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/temperature"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="8dp"
+        android:text="Cloudy" />
+
+    <!-- Weather Icon -->
+    <ImageView
+        android:id="@+id/weather_icon"
+        android:layout_width="254dp"
+        android:layout_height="312dp"
+
+        android:layout_centerInParent="true"
+
+        android:src="@drawable/baseline_cloud_24" />
+
+    <!-- Location Text (Paris) -->
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:text="Paris"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</RelativeLayout>
