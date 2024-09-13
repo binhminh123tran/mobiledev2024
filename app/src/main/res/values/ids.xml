@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
     <item name="weather_container" type="id" />
+=======
+    <item name="container" type="id" />
+    <item name="weather_container" type="id" />
+    <item name="scrollView" type="id" />
+>>>>>>> 6974e102eef7a095ba53d828ac984daa625ee03d
 </resources>
